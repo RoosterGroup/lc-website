@@ -570,7 +570,6 @@ footer{
           <h3>Android</h3>
         </div>
         <p>APK 直装包，无需第三方商店。<br>支持 Android 4.0 及以上系统。</p>
-        <!-- 👇 把 href 换成你的 APK 下载地址 -->
         <a class="btn btn-primary" href="latest.apk" download>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                stroke-linecap="round" stroke-linejoin="round">
@@ -578,7 +577,8 @@ footer{
           </svg>
           下载 APK
         </a>
-        <span class="dl-meta">v1.2.0 · 5.2 MB · 2026-09-13</span>
+        <span class="dl-meta">v1.2.1 · 5.2 MB · 2026-09-13</span>
+        <!-- ===-----------------------== 版本和大小 -------------------===== -->
       </div>
     </div>
   </section>
@@ -611,9 +611,27 @@ footer{
    =================================================== */
 const CHANGELOG = [
   {
+    version: "1.2.1",
+    date: "2026-09-13 23:22",
+    latest: true,
+    items: [
+      "长按对话 → 删除对话 / 上云设置",
+      "长按消息：你发的 →「编辑 / 复制」；AI 输出的 → 长按自由选择复制",
+      "云端额度移到个人页",
+      "云端对话上限 3 → 10",
+      "新建按钮移到右上角，改为图标「气泡+加号」矢量图",
+      "增量回传：服务端把增量按 0.5 秒合并，每次只发这 0.5 秒内新增的内容（不再是完整回答），生成完毕再回传一次完整信息",
+      "模型按钮左侧加立方体图标",
+      "修复1.2的Bug：加载被顶到最上 / 生成完自动回底",
+      "修复1.2的Bug：发出的消息气泡不显示",
+      "修复1.2的Bug：深度思考内容生成后消失",
+      "修复1.2的Bug：本地对话会存在服务器"
+    ]
+  },
+  {
     version: "1.2.0",
     date: "2026-09-13 17:26",
-    latest: true,
+    latest: false,
     items: [
       "图片按钮只在 OCR 视觉模型时显示；切到纯文本模型会自动清掉已选图片",
       "已选图片显示在开关行上方：缩略图 + 图片 + 「移除」",
