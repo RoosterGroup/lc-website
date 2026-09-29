@@ -1,2 +1,2 @@
-# lc-website
+# lc OLD website
 litechat web
